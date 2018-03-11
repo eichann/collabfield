@@ -4,6 +4,7 @@ AllCops:
   Exclude:
     - bin/*
     - db/schema.rb
+    - node_modules/**/*
     - db/migrate/*
     - vendor/**/*
   # Rails向けのRails copsを実行。"rubocop -R"と同じ

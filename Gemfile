@@ -23,10 +23,17 @@ gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'bootstrap_form'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap_form'
+gem 'capybara'
+gem 'database_cleaner'
 gem 'devise'
+gem 'factory_bot_rails'
+gem 'headless'
 gem 'jbuilder', '~> 2.5'
+gem 'poltergeist'
+gem 'rails-controller-testing'
+gem 'rspec-rails', '~> 3.6'
 gem 'webpacker', github: 'rails/webpacker'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -50,6 +57,10 @@ group :development do
   gem 'rubocop', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'selenium-webdriver'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

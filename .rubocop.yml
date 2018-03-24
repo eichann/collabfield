@@ -26,3 +26,7 @@ Metrics/LineLength:
 #'frozen_string_literal: true'を無効
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Lint/ParenthesesAsGroupedExpression:
+  Exclude:
+    - 'spec/helpers/navigation_hepler_spec.rb'

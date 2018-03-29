@@ -20,8 +20,6 @@
 @import "base/default";
 
 /*Partials - メインのcssファイル*/
-@import "partials/*";
-@import "partials/layout/*";
-@import "partials/posts/*";
+@import "partials/**/*";
 
 @import "responsive/*";

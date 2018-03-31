@@ -15,11 +15,12 @@ RSpec.describe Post, type: :model do
   context 'Scopes' do
     it 'default_scope orders by descending created_at' do
       first_post = create(:post)
+      sleep(1)
       second_post = create(:post)
-      expect(Post.all).to eq [second_post, first_post]
+      expect(Post.all.to_a).to eq [second_post, first_post]
     end
   end
-  
+
   it 'by_category scope gets posts by particular category' do
     category = create(:category)
     create(:post, category_id: category.id)
